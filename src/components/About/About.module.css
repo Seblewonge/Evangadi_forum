@@ -75,17 +75,65 @@
 }
 
 /* Responsive adjustment for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .aboutContainer {
+    /* padding: 60px 20px; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutContent {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .mainHeading {
     font-size: 36px;
+padding-top: 0%;
   }
 
   .paragraph {
     font-size: 16px;
   }
 
+  .howItWorksButton {
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+
   .abstractGraphic {
-    /* Hide graphic on very small screens or make it smaller */
-    display: none;
+    width: 25vw;
+    height: 25vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+/* Mobile devices (small screens) */
+@media (max-width: 576px) {
+  .aboutContainer {
+    padding: 40px 15px;
+  }
+
+  .mainHeading {
+    font-size: 28px;
+  }
+
+  .subHeading {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .howItWorksButton {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .abstractGraphic {
+    display: none; /* hide on very small screens */
   }
 }

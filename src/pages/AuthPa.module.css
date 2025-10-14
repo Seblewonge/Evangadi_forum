@@ -1,0 +1,74 @@
+/* Base: desktop layout (side-by-side) */
+.authContainer {
+  display: flex;
+  flex-direction: row; 
+   justify-content: space-between; 
+/* justify-content: center; */
+  width: 90%;
+padding-left: 5%;
+text-align: center;
+  max-width: 1100px;
+  min-height: 600px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: relative;
+}
+
+.formSide,
+.aboutSide {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+/* Desktop: aboutSide has left border */
+.aboutSide {
+ flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ----------------- Tablet: stack vertically ----------------- */
+@media (max-width: 992px) {
+  .authContainer {
+    flex-direction: column; /* stack form & about */
+    align-items: center;
+    width: 95%;
+  }
+
+  .formSide,
+  .aboutSide {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .aboutSide {
+    border-left: none;
+    border-top: 2px solid rgba(0, 0, 0, 0.05);
+    margin-top: 30px; /* spacing from form */
+  }
+}
+
+/* ----------------- Mobile: adjust padding/fonts ----------------- */
+@media (max-width: 576px) {
+  .authPageWrapper {
+    padding: 10px;
+  }
+
+  .formSide,
+  .aboutSide {
+    padding: 20px 15px;
+  }
+
+  .switchText {
+    font-size: 13px;
+  }
+
+  .switchBtn {
+    font-size: 14px;
+  }
+}

@@ -6,7 +6,7 @@
   background-color: #ffffff;
   min-height: 100vh;
   padding: 50px 0; /* allows scroll space */
-  overflow-y: auto; /* scrollable when needed */
+  /*overflow-y: auto;  scrollable when needed */
   box-sizing: border-box;
 }
 
@@ -54,6 +54,7 @@
   border-radius: 6px;
   font-size: 0.9rem;
   outline: none;
+box-sizing: border-box;
 }
 
 .signupForm input:focus {

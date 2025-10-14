@@ -23,7 +23,7 @@ const Footer = () => {
 
           <div className={styles.socialIcons}>
             <a
-              href="https://www.facebook.com/"
+              href="https://web.facebook.com/evangaditech/?_rdc=1&_rdr#"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}
@@ -31,7 +31,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/evangaditech/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.youtube.com/"
+              href="https://www.youtube.com/evangaditech"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialIcon}

@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+ flex-direction: row;
   align-items: center;
   height: 100vh;
   background: #f5f7fa;
@@ -83,15 +84,28 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .authContainer {
     flex-direction: column;
     width: 95%;
-    min-height: auto;
   }
 
   .aboutSide {
     border-left: none;
     border-top: 2px solid rgba(0, 0, 0, 0.05);
+    width: 100%; /* ensure full width */
+    margin-top: 30px; /* spacing from form */
+  }
+
+  .formSide {
+    width: 100%;
+  }
+}
+
+/* Mobile: adjust padding and spacing */
+@media (max-width: 576px) {
+  .formSide,
+  .aboutSide {
+    padding: 20px 15px;
   }
 }
